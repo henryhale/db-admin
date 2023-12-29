@@ -23,6 +23,7 @@ DB-Admin is an experimental project that allows users to interact with databases
   Initially supports SQLite and MySQL, with plans to expand support for other databases like PostgreSQL in future releases.
 
 - [ ] **Security Features** - _work in progress_
+  
   Employ security measures to prevent SQL injection and ensure secure interactions with the database.
 
 
@@ -154,7 +155,7 @@ Follow the steps below to setup a demo on your machine
    - Retrieve data
 
    ```sql
-   SELECT * FROM notes
+   sql> SELECT * FROM notes
    ```
 
 ## Development
