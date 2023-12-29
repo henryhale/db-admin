@@ -1,0 +1,41 @@
+{
+  "name": "db-admin",
+  "private": true,
+  "version": "0.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev:client": "vite client",
+    "dev": "concurrently \"vite build client -w\" \"nodemon server/index.js\"",
+    "serve": "vite build client && node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Henry Hale",
+    "url": "https://github.com/henryhale"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "inken": "^1.0.3",
+    "mysql2": "^3.6.5",
+    "sqlite3": "^5.1.6",
+    "viteshell": "^0.6.7",
+    "vue": "^3.3.11",
+    "xterminal": "^2.1.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0",
+    "vite": "^5.0.8"
+  }
+}

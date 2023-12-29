@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply h-screen bg-slate-600;
+}
+
+table {
+    @apply border-collapse max-w-full;
+}
+
+tr>* {
+    @apply border border-gray-500 p-1.5;
+}
+
+td {
+    @apply text-gray-300;
+}
