@@ -4,6 +4,8 @@
 
 # DB-Admin
 
+_interact with your databases directly in the web browser_
+
 ![](media/screenshot.png)
 
 </div>
