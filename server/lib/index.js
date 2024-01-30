@@ -1,5 +1,8 @@
 import { DATABASES } from "./db.js";
 
+// load .env file
+import "dotenv/config.js";
+
 // get database type
 const dbType = process.env.DB_TYPE;
 

@@ -1,9 +1,6 @@
 import express from "express";
 import helmet from "helmet";
 
-// load .env file
-import "dotenv/config.js";
-
 // create database connection basing on .env file
 import loadDatabase from "./lib/index.js";
 
@@ -13,6 +10,7 @@ const db = await loadDatabase();
 
 process.on("exit", () => db.disconnect());
 
+// serve frontend build
 app.use(express.static("client/dist"));
 
 // parse json requests
